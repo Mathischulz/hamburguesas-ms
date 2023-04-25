@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #003748;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header {
+    background-color: #006e8c;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back {
+    padding: 32px 0;
+    background-color: #006e8c;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    color: #91e4fb;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #91e4fb;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #003748;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 35px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .back {
+        padding: 50px 0;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #006e8c;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+
+/* acá termina header y empieza main */
+
+/* INDEX */
+.imagenfondo {
+    height: 100vh;
+    background-image: url(../img/comboclasic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center
+}
+
+.imagenfondo h2 {
+    color: #c9f1fd;
+    background-color: #00000080;
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    padding-inline: 10px;
+    border-radius: 10px;
+}
+
+
+/* NOSOTROS */
+
+
+.principal-2 {
+    height: 100vh;
+    background-image: url(../img/nosotroslocal2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+} 
+
+.texto h4 {
+    color: #91e4fb;
+    background-color: #00000080;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    width: 1000px;
+}
+
+.texto-nuestromenu {
+    color: #003748;
+    text-align: center;
+}
+
+
+
+/* acá termina main y empieza section1 (menus) */
+
+.promomenus {
+    padding: 30px;
+    background-color: #006e8c;
+    color: #91e4fb;
+    text-align: center;
+}
+
+.titulo-menu {
+    font-size: 40px;
+}
+
+.nuestros-combos {
+    margin: 0px;
+    text-decoration: none;
+    color: #91e4fb;
+} 
+
+/*CSS MAIN MENUS */
+
+.main-menus {
+    padding: 100px;
+    text-align: center;
+    background-color: #91e4fb;
+    color:#003748;
+    padding: 90px 0 0px 0;
+}
+
+/* CSS PARA MENUS */
+
+.principal-3 {
+    padding: 10px 30px 30px 30px;
+    background-color: #91e4fb;
+}
+
+.nuestroscombos {
+    width: 30%;
+    background-color:#006e8c;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    margin-inline: 23px;
+    margin-block: 10px;
+}
+
+.combo-imagenes {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.titulo-combos {
+font-size: 25px;
+text-align: center;
+text-transform: uppercase;
+}
+
+.texto-combos {
+font-size: 15px;
+}
+
+.boton-combos {
+    background-color:#c9f1fd;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.boton-combos, .texto-combos {
+    margin-bottom: 10px;
+
+}
+
+.boton-combos {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* acá termina section1 (menus) y empieza section2 (ubicacion) */
+
+.mapa {
+    width: 100%;
+}
+
+.titulo-nuestro-local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #91e4fb;
+    padding-top: 15px;
+}
+
+.textolocal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #91e4fb;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* CSS GRID UBICACION HTML */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 350px;
+    padding-top: 50px;
+}
+
+
+.mapa-ubi {
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-ubi {
+    font-size: 30px;
+    color: #91e4fb; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.texto-ubi, .texto-ubi2 {
+    font-size: 22px;
+    color: #91e4fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-ubi {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* acá termina section2 (ubicacion) y empieza section3 (contactos) */
+
+.container-cont {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back-cont {
+    padding: 32px 0;
+    background-color: #006e8c;
+}
+
+.menu-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.logo-cont {
+    font-size: 25px;
+    color: #91e4fb;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-cont .navbar-cont ul li {
+    position: relative;
+    float: left;
+}
+
+.menu-cont .navbar-cont ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #91e4fb;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-cont .navbar-cont ul li a:hover {
+    color: #003748;
+}
+
+#menu-cont {
+    display: none;
+}
+
+.menu-icono-cont {
+    width: 35px;
+}
+
+.menu-cont label {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:991px) {
+    .menu-cont {
+        padding: 30px;
+    }
+
+    .menu-cont label {
+        display: initial;
+    }
+
+    .back-cont {
+        padding: 50px 0;
+    }
+
+    .menu-cont .navbar-cont {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #006e8c;
+        display: none;
+    }
+
+    .menu-cont .navbar-cont ul li {
+        width: 100%;
+    }
+
+    #menu-cont:checked ~ .navbar-cont {
+        display: initial;
+    }
+}
+
+.main {
+    padding-top: 74px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main, .formulario {
+    padding-inline: 100px;
+    background-color: #003748;
+    color: #91e4fb;
+}
+
+.formulario {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-label {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.mb-3 {
+    width: 600px;
+}
+
+.contactos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-block: 25px;
+    background-color: #006e8c;
+}
+
+.textoredes {
+    font-weight: bold;
+    font-size: 25px;
+    color: #91e4fb;
+    padding-top: 5px;
+}
+
+
+.titulo-contacto, .numerotelefono, .textocontacto {
+    color: #91e4fb;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.iconos {
+    padding-inline: 10px;
+}
+
+.divimg {
+    padding-block: 15px;
+    background-color: #003748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcontacto {
+    width: 500px;
+}
+
+
+
+/* acá termina section3 y empieza footer */
+
+footer {
+    background-color: #91e4fb;
+    margin: 0px;
+    padding: 20px;
+}
+
+footer p {
+    text-decoration: none;
+    color: #006e8c;
+    text-align: center;
+    font-weight: bold;
+}
+
+.piepagina1 {
+    height: 113px;
+}
+
+.textfoot {
+    padding-top: 20px;
+}
